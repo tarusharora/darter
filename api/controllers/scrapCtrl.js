@@ -29,6 +29,7 @@ const scraperAsync = async (productUrl) => {
 const reviewScraper = (req, res) => {
   const { productUrl } = req.body;
   scraperAsync(productUrl).then((scrapedData) => {
+    // TODO Save data to DB asynchronously
     res.send(scrapedData);
   })
     .catch((err) => {
