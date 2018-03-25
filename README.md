@@ -59,7 +59,9 @@ POST Call
 
 4. To integrate with database in order to save the scraped data in db and use that for analytics.
 
-5. To implement IP spoofing in case some company blocks our IP after some hits.
+5. To implement IP spoofing in case a company blocks our IP after some hits.
+
+6. To add authentication API to validate the requests.
 
 
 
