@@ -1,0 +1,27 @@
+{
+  "name": "darter",
+  "version": "1.0.8",
+  "private": true,
+  "description": "web scraping utility",
+  "keywords": [],
+  "author": "Tarush Arora (tarusharora@live.com)",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.12.3",
+    "lodash": "^4.17.5",
+    "phantom": "^4.0.12",
+    "swagger-express-mw": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
