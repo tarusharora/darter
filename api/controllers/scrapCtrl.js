@@ -2,6 +2,7 @@ const phantom = require('phantom');
 const _isEmpty = require('lodash/isEmpty');
 
 const { mapTigerDirectReviews } = require('../mappers/reviewMapper.js');
+// config for tiger direct website
 const { tigerDirect } = require('../config/index.config');
 
 
@@ -16,6 +17,7 @@ const scraperAsync = async (productUrl) => {
     await page.open(`${productUrl}&pagenumber=${pageNumber}&RSort=${sortOrder}&csid=ITD&recordsPerPage=${reviewsPerPage}`);
     const content = await page.property('content');
     let mappedReviews;
+    // TODO Robust breaking conditions
     if (_isEmpty(mappedReviews = mapTigerDirectReviews(content))) {
       break;
     }
